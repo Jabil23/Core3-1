@@ -1648,17 +1648,38 @@ int PlayerManagerImplementation::awardExperience(CreatureObject* player, const S
 	if (playerObject == NULL)
 		return 0;
 
-	float speciesModifier = 1.f;
-
-	if (amount > 0)
-		speciesModifier = getSpeciesXpModifier(player->getSpeciesName(), xpType);
-
-	int xp = 0;
-
-	if (applyModifiers)
-		xp = playerObject->addExperience(xpType, (int) (amount * speciesModifier * localMultiplier * globalExpMultiplier));
-	else
-		xp = playerObject->addExperience(xpType, (int)amount);
+	int xp;
+	if (amount <= 0 || xpType == "jedi_general" || xpType == "gcw_currency_rebel" || xpType == "gcw_currency_imperial" || xpType == "force_rank_xp" ){
+			xp = playerObject->addExperience(xpType, amount);
+	} else if (xpType == "imagedesigner" ||
+			xpType == "crafting_medicine_general" ||
+			xpType == "crafting_general" ||
+			xpType == "crafting_bio_engineer_creature" ||
+			xpType == "bio_engineer_dna_harvesting" ||
+			xpType == "crafting_clothing_armor" ||
+			xpType == "crafting_weapons_general" ||
+			xpType == "crafting_food_general" ||
+			xpType == "crafting_clothing_general" ||
+			xpType == "crafting_structure_general" ||
+			xpType == "crafting_droid_general" ||
+			xpType == "crafting_spice" ||
+			xpType == "shipwright" ||
+			xpType == "music" ||
+			xpType == "dance" ||
+			xpType == "entertainer_healing"){
+				xp = playerObject->addExperience(xpType, (amount * 6));
+				float speciesModifier = 1.f;
+				if (amount > 0)
+					speciesModifier = getSpeciesXpModifier(player->getSpeciesName(), xpType);
+		} else {
+			float speciesModifier = 1.f;
+			if (amount > 0)
+				speciesModifier = getSpeciesXpModifier(player->getSpeciesName(), xpType);
+			if (applyModifiers)
+				xp = playerObject->addExperience(xpType, (int) (amount * speciesModifier * localMultiplier * globalExpMultiplier));
+			else
+				xp = playerObject->addExperience(xpType, (int)amount);
+		}
 
 	player->notifyObservers(ObserverEventType::XPAWARDED, player, xp);
 
@@ -1675,7 +1696,6 @@ int PlayerManagerImplementation::awardExperience(CreatureObject* player, const S
 			player->sendSystemMessage(message);
 		}
 	}
-
 	return xp;
 }
 
