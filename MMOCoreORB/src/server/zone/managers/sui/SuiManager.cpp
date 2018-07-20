@@ -361,7 +361,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 				SkillManager::instance()->surrenderAllSkills(player, true, false);
 				player->sendSystemMessage("All skills unlearned.");
 
-			} else if (templatePath == "cleanse_character") {
+			/*} else if (templatePath == "cleanse_character") {
 				if (!player->isInCombat()) {
 					player->sendSystemMessage("You have been cleansed from the signs of previous battles.");
 
@@ -382,7 +382,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 					} else {
 						player->sendSystemMessage("Not within combat.");
 					}
-				}
+				}*/
 			} else if (templatePath == "reset_buffs") {
 				if (!player->isInCombat()) {
 					player->sendSystemMessage("Your buffs have been reset.");
@@ -395,7 +395,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 					player->sendSystemMessage("Not within combat.");
 				}
 
-			} else if (templatePath.beginsWith("crafting_apron_")) {
+			/*} else if (templatePath.beginsWith("crafting_apron_")) {
 				//"object/tangible/wearables/apron/apron_chef_s01.iff"
 				//"object/tangible/wearables/ithorian/apron_chef_jacket_s01_ith.iff"
 
@@ -483,12 +483,12 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 				StringIdChatParameter stringId;
 				stringId.setStringId("@faction_perk:bonus_base_name"); //You received a: %TO.
 				stringId.setTO(apron->getObjectID());
-				player->sendSystemMessage(stringId);
+				player->sendSystemMessage(stringId);*/
 
 			} else if (templatePath == "enhance_character") {
 				bluefrog->enhanceCharacter(player);
 
-			} else if (templatePath == "credits") {
+			/*} else if (templatePath == "credits") {
 				player->addCashCredits(50000, true);
 				player->sendSystemMessage("You have received 50.000 Credits");
 
@@ -496,7 +496,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 				ghost->increaseFactionStanding("rebel", 100000);
 
 			} else if (templatePath == "faction_imperial") {
-				ghost->increaseFactionStanding("imperial", 100000);
+				ghost->increaseFactionStanding("imperial", 100000);*/
 
 			} else if (templatePath == "language") {
 				bluefrog->giveLanguages(player);
@@ -521,7 +521,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 
 			} else if (templatePath == "clear_dots") {
 				player->clearDots();
-			} else if (templatePath == "frs_light_side") {
+			/*} else if (templatePath == "frs_light_side") {
 				PlayerManager* pman = zserv->getPlayerManager();
 				pman->unlockFRSForTesting(player, 1);
 			} else if (templatePath == "frs_dark_side") {
@@ -545,7 +545,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 				bluefrog->grantGlowyBadges(player);
 
 			} else if (templatePath == "unlock_jedi_initiate") {
-				bluefrog->grantJediInitiate(player);
+				bluefrog->grantJediInitiate(player);*/
 
 			} else {
 				if (templatePath.length() > 0) {
@@ -562,7 +562,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 			ghost->addSuiBox(cbSui);
 			player->sendMessage(cbSui->generateMessage());
 
-		} else { // Items
+		/*} else { // Items
 			ManagedReference<SceneObject*> inventory = player->getSlottedObject("inventory");
 
 			if (inventory == NULL) {
@@ -629,7 +629,7 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 			}
 
 			ghost->addSuiBox(cbSui);
-			player->sendMessage(cbSui->generateMessage());
+			player->sendMessage(cbSui->generateMessage());*/
 		}
 	}
 }
