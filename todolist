@@ -23,4 +23,5 @@ Remove overt requirement for Jedi Knight
 [Done] Enable interplanetary travel from/to all NPC cities
 [Done] Veteran reward timers significantly reduced, 1 week between rewards
 [Done] comment out blue frog terminals functions
-Fix money split and exp split on missions
+Fix money split on missions
+[Done]Fix exp split on missions
