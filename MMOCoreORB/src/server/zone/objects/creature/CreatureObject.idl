@@ -199,6 +199,7 @@ class CreatureObject extends TangibleObject {
 	public static final int ZABRAK = 7;
 	public static final int ITHORIAN = 0x21;
 	public static final int SULLUSTAN = 0x31;
+	public static final int CHISS = 0x34;
 
 	public static final int MALE = 0;
 	public static final int FEMALE = 1;
