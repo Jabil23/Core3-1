@@ -883,7 +883,7 @@ trainerSkills = {
 		"force_discipline_defender_preternatural_defense_01",
 		"force_discipline_defender_preternatural_defense_02",
 		"force_discipline_defender_preternatural_defense_03",
-		"force_discipline_defender_preternatural_defense_04"
+		"force_discipline_defender_preternatural_defense_04",
 		"jedi_padawan_novice",
 		"jedi_padawan_master",
 		"jedi_padawan_saber_01",
