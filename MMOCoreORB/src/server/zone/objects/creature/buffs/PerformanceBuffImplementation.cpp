@@ -73,11 +73,11 @@ void PerformanceBuffImplementation::activate(bool applyModifiers) {
 		speciesFocusValue = 1100;
 		speciesWillValue = 1100;
 		break;
-	case CreatureObject::CHISS: 
-		speciesMindValue = 1100;
-		speciesFocusValue = 1100;
-		speciesWillValue = 1100;
-		break;
+	//case CreatureObject::CHISS: 
+		//speciesMindValue = 1100;
+		//speciesFocusValue = 1100;
+		//speciesWillValue = 1100;
+		//break;
 	default:
 		speciesMindValue = 1100;
 		speciesFocusValue = 1100;
