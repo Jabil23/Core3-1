@@ -69,7 +69,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 
 	itemList = {
 		"Character Options",
---		{
+		{
 --			"Learn Skill",
 --			{
 --				"Architect",
@@ -2893,7 +2893,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 --					"Tracking Device Case - Third Section", "object/tangible/loot/collectible/collectible_parts/fs_tracking_device_case_03.iff",
 --				},
 --			}
---		}
+		}
 	}
 }
 
