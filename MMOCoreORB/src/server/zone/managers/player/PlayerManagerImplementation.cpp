@@ -1353,7 +1353,8 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 				float xpAmount = baseXp;
 
 				//xpAmount *= (float) damage / totalDamage; - taken from SWG Infinity
-				xpAmount *= (float) damage / playerTotal;
+				//xpAmount *= (float) damage / playerTotal;
+				xpAmount *= 1;
 
 				//Cap xp based on level
 				//xpAmount = Math::min(xpAmount, calculatePlayerLevel(attacker, xpType) * 300.f);
