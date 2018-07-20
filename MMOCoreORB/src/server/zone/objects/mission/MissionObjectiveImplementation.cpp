@@ -241,7 +241,7 @@ void MissionObjectiveImplementation::awardReward() {
 		player->sendSystemMessage(stringId);
 
 		Locker lockerPl(player, _this.getReferenceUnsafeStaticCast());
-		player->addBankCredits(dividedReward, false);
+		player->addBankCredits(dividedReward, false);  // set to false to stop credit split on mission
 	}
 
 	if (group != NULL) {
