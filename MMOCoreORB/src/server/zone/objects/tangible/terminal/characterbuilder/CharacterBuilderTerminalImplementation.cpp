@@ -102,7 +102,7 @@ void CharacterBuilderTerminalImplementation::giveLanguages(CreatureObject* playe
 	skillManager->awardSkill("social_language_sullustan_comprehend", player, true, true, true);
 }
 
-void CharacterBuilderTerminalImplementation::grantGlowyBadges(CreatureObject* player) {
+/*void CharacterBuilderTerminalImplementation::grantGlowyBadges(CreatureObject* player) {
 	CharacterBuilderTerminalTemplate* terminalTemplate = dynamic_cast<CharacterBuilderTerminalTemplate*>(templateObject.get());
 
 	if (terminalTemplate == NULL)
@@ -120,7 +120,7 @@ void CharacterBuilderTerminalImplementation::grantGlowyBadges(CreatureObject* pl
 	}
 }
 
-/*void CharacterBuilderTerminalImplementation::grantJediInitiate(CreatureObject* player) {
+void CharacterBuilderTerminalImplementation::grantJediInitiate(CreatureObject* player) {
 	if (JediManager::instance()->getJediProgressionType() != JediManager::VILLAGEJEDIPROGRESSION)
 		return;
 
