@@ -224,7 +224,7 @@ void MissionObjectiveImplementation::awardReward() {
 	bool expanded = false;
 
 	if (playerCount > divisor) {
-		divisor = 1;
+		divisor = playerCount;
 		expanded = true;
 	}
 
@@ -241,7 +241,7 @@ void MissionObjectiveImplementation::awardReward() {
 		player->sendSystemMessage(stringId);
 
 		Locker lockerPl(player, _this.getReferenceUnsafeStaticCast());
-		player->addBankCredits(dividedReward, true);
+		player->addBankCredits(dividedReward, false);
 	}
 
 	if (group != NULL) {
