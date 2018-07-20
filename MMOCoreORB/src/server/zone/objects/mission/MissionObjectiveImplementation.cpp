@@ -223,8 +223,8 @@ void MissionObjectiveImplementation::awardReward() {
 	int divisor = mission->getRewardCreditsDivisor();
 	bool expanded = false;
 
-	if (playerCount > divisor) {
-		divisor = playerCount;
+	if (1 > divisor) {	//Hopefully allows full credit split for group, stolen from Sentinels Republic
+		divisor = 1;	//Hopefully allows full credit split for group, stolen from Sentinels Republic
 		expanded = true;
 	}
 
@@ -241,7 +241,7 @@ void MissionObjectiveImplementation::awardReward() {
 		player->sendSystemMessage(stringId);
 
 		Locker lockerPl(player, _this.getReferenceUnsafeStaticCast());
-		player->addBankCredits(dividedReward, false);  // set to false to stop credit split on mission
+		player->addBankCredits(dividedReward, true);
 	}
 
 	if (group != NULL) {
