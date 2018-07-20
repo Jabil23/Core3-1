@@ -120,7 +120,7 @@ void CharacterBuilderTerminalImplementation::grantGlowyBadges(CreatureObject* pl
 	}
 }
 
-void CharacterBuilderTerminalImplementation::grantJediInitiate(CreatureObject* player) {
+/*void CharacterBuilderTerminalImplementation::grantJediInitiate(CreatureObject* player) {
 	if (JediManager::instance()->getJediProgressionType() != JediManager::VILLAGEJEDIPROGRESSION)
 		return;
 
@@ -157,4 +157,4 @@ void CharacterBuilderTerminalImplementation::grantJediInitiate(CreatureObject* p
 	*luaVillageGmCmd << player;
 
 	luaVillageGmCmd->callFunction();
-}
+}*/
