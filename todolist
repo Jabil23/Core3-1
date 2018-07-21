@@ -6,10 +6,8 @@ Enable old style jedi tree
 Add /board shuttle command
 Increase ticket use range for shuttles
 Change to allow novice boxes to be taught by players
-Increase group invite range
 Difficulty in mission title
 Clothing Attachment/Armor Attachment in name
-Remove out of combat requirement for dismissing vehicle
 
 Complete:
 [Done] Reduce or remove time between shuttles
@@ -32,3 +30,5 @@ Complete:
 [Done] Fix money split on missions
 [Done] Fix exp split on missions
 [Done] Fix combat exp rate 
+[Done] Increase group invite range
+[Done] Remove out of combat requirement for dismissing vehicle
