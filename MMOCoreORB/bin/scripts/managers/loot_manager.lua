@@ -175,6 +175,7 @@ lootableClothingAttachmentStatMods = {
 	"food_assembly",
 	"food_experimentation",
 	"foraging",
+	"force_defense"
 	"general_assembly",
 	"general_experimentation",
 --	"grenade_assembly",
@@ -200,8 +201,14 @@ lootableClothingAttachmentStatMods = {
 --	"instrument_assembly",
 	"intimidate",
 	"intimidate_defense",
+	"jedi_saber_assembly",
+	"jedi_saber_experimentation",
+	"jedi_state_defense",
+	"jedi_force_power_regen",
 --	"keep_creature",
 	"knockdown_defense",
+	"lightsaber_accuracy",
+	"lightsaber_speed",
 --	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
@@ -801,17 +808,6 @@ lootableHeavyWeaponStatMods = {
 --	"volley"
 }
 
-----------Custom Lootables Go Here----------
-lootableJediStatMods = {
-	"jedi_saber_assembly",
-	"jedi_saber_experimentation",
-	"jedi_state_defense",
-	"jedi_force_power_regen",
-	"lightsaber_accuracy",
-	"lightsaber_speed",
-	"force_defense"
-}
-----------Custom Lootables Go Here----------
 
 -- Values used to generate lightsaber crystal stats
 jediCrystalStats = {
