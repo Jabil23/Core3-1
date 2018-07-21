@@ -34,4 +34,9 @@ Complete:
 [Done] Remove out of combat requirement for dismissing vehicle
 [Done] Increased practice mode crafting xp to 3.5x from 1.05x
 [Done] Reduced crafting time/cooldown
-[Done] Added selectable slice type
+[Done] Added selectable slice type and reduced randomness of slices
+[Done] Reduced randomness of lightsaber crystal tunes. They will tune closer to their maximum.
+[Done] Increase loot quality
+[Done] Remove unused SEAs
+[Done] Add Jedi SEAs
+[Done] Change lightsabers to all use same accuracy and speed type, stolen from Infinity
