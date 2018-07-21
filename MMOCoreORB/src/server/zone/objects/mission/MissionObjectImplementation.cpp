@@ -165,7 +165,7 @@ void MissionObjectImplementation::setRewardCredits(int creds, bool notifyClient)
 			
 			rewardCredits = group->getNumberOfPlayerMembers();
 			
-		} else {*/
+		} else */{
 			rewardCreditsDivisor = 1;
 		}
 
