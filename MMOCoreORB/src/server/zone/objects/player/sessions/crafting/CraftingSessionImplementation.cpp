@@ -1185,7 +1185,7 @@ void CraftingSessionImplementation::createPrototype(int clientCounter, bool crea
 
 			// This is for practicing
 			startCreationTasks(manufactureSchematic->getComplexity() * 2, true);
-			xp = round(xp * 1.05f);
+			xp = round(xp * 3.50f);
 		}
 
 		Reference<PlayerManager*> playerManager = crafter->getZoneServer()->getPlayerManager();
@@ -1224,8 +1224,8 @@ void CraftingSessionImplementation::startCreationTasks(int timer, bool practice)
 			updateToolCountdownTask = new UpdateToolCountdownTask(crafter,
 					craftingTool, timer);
 			updateToolCountdownTask->schedule(timer2);
-			timer -= 5;
-			timer2 += 5000;
+			timer -= 1;
+			timer2 += 1000;
 		}
 
 		if (timer < 0) {
