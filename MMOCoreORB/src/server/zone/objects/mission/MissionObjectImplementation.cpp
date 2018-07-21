@@ -160,11 +160,12 @@ void MissionObjectImplementation::setRewardCredits(int creds, bool notifyClient)
 	ManagedReference<CreatureObject*> player = getParentRecursively(SceneObjectType::PLAYERCREATURE).castTo<CreatureObject*>();
 
 	if (player != NULL) {
-		if (player->isGrouped()) {
+		/*if (player->isGrouped()) {
 			Reference<GroupObject*> group = player->getGroup();
-			//Set credit divisor to 1 for full credit split
-			rewardCreditsDivisor = 1;	//group->getNumberOfPlayerMembers();
-		} else {
+			
+			rewardCredits = group->getNumberOfPlayerMembers();
+			
+		} else {*/
 			rewardCreditsDivisor = 1;
 		}
 
