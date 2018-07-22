@@ -66,7 +66,7 @@ protected:
 	String animation;
 	String effectString;
 
-	VectorMap<uint8, StateEffect> stateEffects;
+	VectorMap<uint64, StateEffect> stateEffects;
 	Vector<DotEffect> dotEffects;
 
 	bool forceAttack;
