@@ -1652,7 +1652,7 @@ int PlayerManagerImplementation::awardExperience(CreatureObject* player, const S
 
 	int xp;
 	if (amount <= 0 || xpType == "jedi_general" || xpType == "gcw_currency_rebel" || xpType == "gcw_currency_imperial" || xpType == "force_rank_xp" ){
-			xp = playerObject->addExperience(xpType, amount);
+			xp = playerObject->addExperience(xpType, amount * 6);
 	} else if (xpType == "imagedesigner" ||
 			xpType == "crafting_medicine_general" ||
 			xpType == "crafting_general" ||
@@ -1669,7 +1669,7 @@ int PlayerManagerImplementation::awardExperience(CreatureObject* player, const S
 			xpType == "music" ||
 			xpType == "dance" ||
 			xpType == "entertainer_healing"){
-				xp = playerObject->addExperience(xpType, (amount * 6));
+				xp = playerObject->addExperience(xpType, (amount * 12));
 				float speciesModifier = 1.f;
 				if (amount > 0)
 					speciesModifier = getSpeciesXpModifier(player->getSpeciesName(), xpType);

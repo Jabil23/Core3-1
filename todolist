@@ -8,6 +8,13 @@ Increase ticket use range for shuttles
 Change to allow novice boxes to be taught by players
 Difficulty in mission title
 Clothing Attachment/Armor Attachment in name
+Change jedi dervish attacks from cone to area/circular
+Increase base sample amount
+Increase resource stack size
+Increase extractor hopper size
+Add more items to loot table, like Resource Deed and special lightsaber crystals
+Increase duration, list quantity, and list duration of Bazaar
+Increase number of items in house/lot
 
 Complete:
 [Done] Reduce or remove time between shuttles
@@ -34,4 +41,9 @@ Complete:
 [Done] Remove out of combat requirement for dismissing vehicle
 [Done] Increased practice mode crafting xp to 3.5x from 1.05x
 [Done] Reduced crafting time/cooldown
-[Done] Added selectable slice type
+[Done] Added selectable slice type and reduced randomness of slices
+[Done] Reduced randomness of lightsaber crystal tunes. They will tune closer to their maximum.
+[Done] Increase loot quality
+[Done] Remove unused SEAs
+[Done] Add Jedi SEAs
+[Done] Change lightsabers to all use same accuracy and speed type, stolen from Infinity
