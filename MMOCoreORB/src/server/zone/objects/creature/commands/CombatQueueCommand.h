@@ -66,7 +66,7 @@ protected:
 	String animation;
 	String effectString;
 
-	VectorMap<uint64, StateEffect> stateEffects;
+	VectorMap<uint8, StateEffect> stateEffects;
 	Vector<DotEffect> dotEffects;
 
 	bool forceAttack;
@@ -230,27 +230,14 @@ public:
 			return GENERALERROR;
 		}
 
-		if (creature->isPlayerCreature() && targetObject->getParentID() != 0 && creature->getParentID() != targetObject->getParentID()) {
+		if (creature->isPlayerCreature() && !targetObject->isPlayerCreature() && targetObject->getParentID() != 0 && creature->getParentID() != targetObject->getParentID()) {
 			Reference<CellObject*> targetCell = targetObject->getParent().get().castTo<CellObject*>();
 
-			if (targetCell != nullptr) {
-				if (!targetObject->isPlayerCreature()) {
-					ContainerPermissions* perms = targetCell->getContainerPermissions();
+			if (targetCell != NULL) {											
+				ContainerPermissions* perms = targetCell->getContainerPermissions();
 
-					if (!perms->hasInheritPermissionsFromParent()) {
-						if (!targetCell->checkContainerPermission(creature, ContainerPermissions::WALKIN)) {
-							creature->sendSystemMessage("@combat_effects:cansee_fail"); // You cannot see your target.
-							return GENERALERROR;
-						}
-					}
-				}
-
-				ManagedReference<SceneObject*> parentSceneObject = targetCell->getParent().get();
-
-				if (parentSceneObject != nullptr) {
-					BuildingObject* buildingObject = parentSceneObject->asBuildingObject();
-
-					if (buildingObject != nullptr && !buildingObject->isAllowedEntry(creature)) {
+				if (!perms->hasInheritPermissionsFromParent()) {
+					if (!targetCell->checkContainerPermission(creature, ContainerPermissions::WALKIN)) {
 						creature->sendSystemMessage("@combat_effects:cansee_fail"); // You cannot see your target.
 						return GENERALERROR;
 					}
