@@ -82,7 +82,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_gen5 = objec
 	-- See http://www.ocdsoft.com/files/certifications.xls
 	certificationsRequired = { "cert_onehandlightsaber_gen4" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "onehandlightsaber_accuracy" },
+	creatureAccuracyModifiers = { "lightsaber_accuracy" },
 
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "melee_defense" },
@@ -91,7 +91,7 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_gen5 = objec
 	defenderSecondaryDefenseModifiers = { "saber_block" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "onehandlightsaber_speed" },
+	speedModifiers = { "lightsaber_speed" },
 
 	-- Leave blank for now
 	damageModifiers = { },
