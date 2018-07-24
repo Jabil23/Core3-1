@@ -179,8 +179,8 @@ void VehicleControlDeviceImplementation::storeObject(CreatureObject* player, boo
 		return;*/
 
 	//Can now store vehicle while in combat or dead
-	//if (!force && (player->isInCombat() || player->isDead()))
-		//return;
+	if (!force && (player->isInCombat() || player->isDead()))
+		return;
 
 	if (player->isRidingMount() && player->getParent() == controlledObject) {
 
