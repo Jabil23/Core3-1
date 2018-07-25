@@ -134,7 +134,7 @@ lootableArmorAttachmentStatMods = {
 	"twohandmelee_speed",
 	"unarmed_accuracy",
 --	"unarmed_damage",
-	"unarmed_speed",
+	"unarmed_speed"
 --	"volley",
 --	"warcry"
 }
@@ -519,7 +519,7 @@ lootableOneHandedMeleeStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"warcry"
 }
 
@@ -558,7 +558,7 @@ lootableTwoHandedMeleeStatMods = {
 	"thrown_speed",
 	"twohandmelee_accuracy",
 --	"twohandmelee_damage",
-	"twohandmelee_speed",
+	"twohandmelee_speed"
 --	"warcry"
 }
 
@@ -597,7 +597,7 @@ lootableUnarmedStatMods = {
 	"thrown_speed",
 	"unarmed_accuracy",
 --	"unarmed_damage",
-	"unarmed_speed",
+	"unarmed_speed"
 --	"warcry"
 }
 
@@ -639,7 +639,7 @@ lootablePistolStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"volley"
 }
 
@@ -684,7 +684,7 @@ lootableRifleStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"volley"
 }
 
@@ -725,7 +725,7 @@ lootableCarbineStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"volley"
 }
 
@@ -763,7 +763,7 @@ lootablePolearmStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"warcry"
 }
 
@@ -804,10 +804,9 @@ lootableHeavyWeaponStatMods = {
 	"tame_aggro",
 	"tame_non_aggro",
 	"thrown_accuracy",
-	"thrown_speed",
+	"thrown_speed"
 --	"volley"
 }
-
 
 -- Values used to generate lightsaber crystal stats
 jediCrystalStats = {
