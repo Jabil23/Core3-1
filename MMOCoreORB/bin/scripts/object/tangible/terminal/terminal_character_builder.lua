@@ -1517,12 +1517,12 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 			"Unlearn All Skills", "unlearn_all_skills",
 			"Cleanse Character", "cleanse_character",
 			"Enhance Character", "enhance_character",
---			"Jedi",
---			{
---				--"Unlock Jedi Initiate", "unlock_jedi_initiate",
+			"Jedi",
+			{
+				"Unlock Jedi Initiate", "unlock_jedi_initiate",
 --				"Unlock FRS Light Side", "frs_light_side",
 --				"Unlock FRS Dark Side", "frs_dark_side"
---			},
+			},
 --			"Fill Force Bar", "fill_force_bar",
 			"Reset Buffs", "reset_buffs",
 			"Learn Languages", "language",
@@ -1534,15 +1534,15 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 			"Apply Fire DOT", "apply_fire_dot",
 			"Clear DOTs", "clear_dots",
 --			"Max XP", "max_xp",
---			"Become Glowy", "become_glowy",
+			"Become Glowy", "become_glowy",
 --			"Faction Points",
 --			{
 --				"Imperial", "faction_imperial",
 --				"Rebel", "faction_rebel"
 --			}
---		},
---		"Items",
---		{
+		},
+		"Items",
+		{
 --			"Jedi Items",
 --			{
 --				"Color Crystal", "color_crystals",
@@ -1553,8 +1553,8 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 --			--	"Armor Attachment", "object/tangible/gem/armor.iff",
 --			--	"Clothing Attachment", "object/tangible/gem/clothing.iff",
 --			--},
---			"Armor",
---			{
+			"Armor",
+			{
 --				--	"Bone Armor",
 --				--	{
 --				--		"Bone Left Bicep", "object/tangible/wearables/armor/bone/armor_bone_s01_bicep_l.iff",
@@ -1619,23 +1619,23 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 --				--		"Chitin Helmet", "object/tangible/wearables/armor/chitin/armor_chitin_s01_helmet.iff",
 --				--		"Chitin Leggings", "object/tangible/wearables/armor/chitin/armor_chitin_s01_leggings.iff"
 --				--	},
---				"Composite Armor",
---				{
---					"Composite Left Bicep", "object/tangible/wearables/armor/composite/armor_composite_bicep_l.iff",
+				"Composite Armor",
+				{
+					"Composite Left Bicep", "object/tangible/wearables/armor/composite/armor_composite_bicep_l.iff",
 --					"Composite Right Bicep", "object/tangible/wearables/armor/composite/armor_composite_bicep_r.iff",
---					"Composite Boots", "object/tangible/wearables/armor/composite/armor_composite_boots.iff",
+					"Composite Boots", "object/tangible/wearables/armor/composite/armor_composite_boots.iff",
 --					"Composite Left Bracer", "object/tangible/wearables/armor/composite/armor_composite_bracer_l.iff",
 --					"Composite Right Bracer", "object/tangible/wearables/armor/composite/armor_composite_bracer_r.iff",
---					"Composite Chest Plate", "object/tangible/wearables/armor/composite/armor_composite_chest_plate.iff",
+					"Composite Chest Plate", "object/tangible/wearables/armor/composite/armor_composite_chest_plate.iff",
 --					"Composite Gloves", "object/tangible/wearables/armor/composite/armor_composite_gloves.iff",
---					"Composite Helmet", "object/tangible/wearables/armor/composite/armor_composite_helmet.iff",
+					"Composite Helmet", "object/tangible/wearables/armor/composite/armor_composite_helmet.iff",
 --					"Composite Leggings", "object/tangible/wearables/armor/composite/armor_composite_leggings.iff"
---				},
+				},
 --			--	"Singing Mountain Clan Armor",
 --			--	{
 --			--		"Singing Mountain Clan Bicep", "object/tangible/wearables/armor/bone/armor_smc_s01_bicep_l.iff"
 --			--	}
---			},
+			},
 --			"Clothes",
 --			{
 --				"Crafting Aprons",
@@ -1818,9 +1818,9 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 --			--"Yarrock", "object/tangible/food/spice/spice_yarrock.iff"
 --			--}
 --			--},
---			"Deeds",
---			{
---				"Resource Deed", "object/tangible/veteran_reward/resource.iff",
+			"Deeds",
+			{
+				"Resource Deed", "object/tangible/veteran_reward/resource.iff",
 --				"Vehicle Deeds",
 --				{
 --					"Swoop", "object/tangible/deed/vehicle_deed/speederbike_swoop_deed.iff",
@@ -2152,7 +2152,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 --					--"Rental: Wrecked Sandcrawler", "object/tangible/deed/event_perk/wrecked_sandcrawler_deed.iff",
 --					"Rental: X-Wing", "object/tangible/deed/event_perk/xwing_static_deed.iff",
 --				},
---			},
+			},
 --			"Droids",
 --			{
 --				"Arakyd Probe Droid", "object/tangible/mission/mission_bounty_droid_probot.iff",
