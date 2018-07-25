@@ -806,7 +806,7 @@ lootableHeavyWeaponStatMods = {
 	"thrown_accuracy",
 	"thrown_speed",
 --	"volley"
-
+}
 
 
 -- Values used to generate lightsaber crystal stats
