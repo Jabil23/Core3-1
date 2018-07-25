@@ -175,7 +175,7 @@ lootableClothingAttachmentStatMods = {
 	"food_assembly",
 	"food_experimentation",
 	"foraging",
-	"force_defense"
+--	"force_defense"			--Jedi
 	"general_assembly",
 	"general_experimentation",
 --	"grenade_assembly",
@@ -201,14 +201,14 @@ lootableClothingAttachmentStatMods = {
 --	"instrument_assembly",
 	"intimidate",
 	"intimidate_defense",
-	"jedi_saber_assembly",
-	"jedi_saber_experimentation",
-	"jedi_state_defense",
-	"jedi_force_power_regen",
+--	"jedi_saber_assembly",		--jedi
+--	"jedi_saber_experimentation",	--jedi
+--	"jedi_state_defense",		--jedi
+--	"jedi_force_power_regen",	--jedi
 --	"keep_creature",
 	"knockdown_defense",
-	"lightsaber_accuracy",
-	"lightsaber_speed",
+--	"lightsaber_accuracy",		--jedi
+--	"lightsaber_speed",		--jedi
 --	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
