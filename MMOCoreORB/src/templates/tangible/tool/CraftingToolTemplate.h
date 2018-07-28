@@ -29,7 +29,7 @@ public:
 		SharedTangibleObjectTemplate::readObject(templateData);
 
 		toolType = templateData->getIntField("toolType");
-		complexityLevel = templateData->getIntField("complexityLevel");
+		complexityLevel = 1; //templateData->getIntField("complexityLevel");
 		forceCritAssembly = templateData->getIntField("forceCriticalAssembly");
 		forceCritExperiment = templateData->getIntField("forceCriticalExperiment");
 
