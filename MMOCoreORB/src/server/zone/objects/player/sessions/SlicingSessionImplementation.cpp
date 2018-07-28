@@ -730,7 +730,7 @@ void SlicingSessionImplementation::handleArmorSlice() {
 				break;
 		}
 	}else{
-		percent = ceil(percent * 0.85);   // 15% penalty for choosing type of slice
+		percent = ceil(percent * 1.00);   // 15% penalty for choosing type of slice
 		switch (sliceOption) {
 			case 1:
 				handleSliceEffectiveness(percent);
