@@ -2526,8 +2526,8 @@ void PlayerManagerImplementation::startWatch(CreatureObject* creature, uint64 en
 	ManagedReference<SceneObject*> object = server->getObject(entid);
 	uint64 watchID = creature->getWatchToID();
 
-	if (watchID == entid)
-		return;
+	//if (watchID == entid) //Ent can buff themselves, idea stolen from Infinity
+		//return;
 
 	if (object == NULL)
 		return;
@@ -2608,8 +2608,8 @@ void PlayerManagerImplementation::startListen(CreatureObject* creature, uint64 e
 	ManagedReference<SceneObject*> object = server->getObject(entid);
 	uint64 listenID = creature->getListenID();
 
-	if (listenID == entid)
-		return;
+	//if (listenID == entid) //Ent can buff themselves, idea stolen from Infinity
+		//return;
 
 	if (object == NULL)
 		return;
@@ -4035,7 +4035,9 @@ SortedVector<String> PlayerManagerImplementation::getTeachableSkills(CreatureObj
 
 		String skillName = skill->getSkillName();
 
-		if (!(skillName.contains("novice") || skillName.contains("force_sensitive") || skillName.contains("force_rank") || skillName.contains("force_title") || skillName.contains("admin_")) && skillManager->canLearnSkill(skillName, student, false))
+		//Should allow novice boxes to be trained by players
+		//if (!(skillName.contains("novice") || skillName.contains("force_sensitive") || skillName.contains("force_rank") || skillName.contains("force_title") || skillName.contains("admin_")) && skillManager->canLearnSkill(skillName, student, false))
+		if (!(skillName.contains("force_sensitive") || skillName.contains("force_rank") || skillName.contains("force_title") || skillName.contains("admin_")) && skillManager->canLearnSkill(skillName, student, false))
 			skills.put(skillName);
 	}
 
