@@ -46,7 +46,7 @@ public:
 
 		Locker locker(multBuff);
 
-		multBuff->setSkillModifier("private_damage_divisor", 20);
+		multBuff->setSkillModifier("private_damage_divisor", 1); //changed divisor to 1 to remove debuff
 
 		creature->addBuff(multBuff);
 
