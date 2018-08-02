@@ -16,6 +16,7 @@
 #include "server/zone/objects/creature/buffs/SingleUseBuff.h"
 #include "server/zone/objects/player/PlayerObject.h"
 #include "server/zone/managers/frs/FrsManager.h"
+#include "server/zone/objects/group/GroupObject.h"
 
 class JediQueueCommand : public QueueCommand {
 
@@ -71,7 +72,60 @@ public:
 	bool isJediQueueCommand() {
 		return true;
 	}
+	
+	int doJediGroupBuffCommand(CreatureObject* creature) const {
+		ManagedReference<GroupObject*> group = creature->getGroup();
+		ManagedReference<CreatureObject*> groupMember = NULL;
+		ManagedReference<CreatureObject*> player = NULL;
+		ManagedReference<PlayerObject*> ghost = NULL;
+
+		if (group == NULL || group->getGroupSize() < 1)
+			return SUCCESS;
+
+		// first and foremost, we need to toggle this buff off if we already have it
+
+		for (int i = 0; i < group->getGroupSize(); i++){
+			groupMember = group->getGroupMember(i);
+			if (groupMember == NULL)
+				continue;
+
+			if (groupMember == creature)
+				continue;
+
+			player = groupMember.get();
+
+			if (player == NULL)
+				continue;
+
+			ghost = player->getPlayerObject().get();
+
+			if (ghost == NULL)
+				continue;
+
+			if (ghost->hasBhTef())
+				continue;
+
+			if (!creature->isInRange(groupMember, 256)) //must be within 256ms to get the buff
+				continue;
+
+			// Do checks first.
+			int res = doCommonJediGroupChecks(groupMember);
+
+			if (res != SUCCESS)
+				continue;
+
+			if (groupMember->hasBuff(buffCRC)) {
+				Locker glock(groupMember);
+				groupMember->removeBuff(buffCRC);
+			}
+
+			doDelayedBuff(groupMember);
+		}
+	 return SUCCESS;
+	}
+
     
+	
 	int doJediSelfBuffCommand(CreatureObject* creature) const {
 		// first and foremost, we need to toggle this buff off if we already have it
 		if (creature->hasBuff(buffCRC)) {
