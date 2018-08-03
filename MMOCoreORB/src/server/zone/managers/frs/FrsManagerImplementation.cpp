@@ -402,8 +402,8 @@ void FrsManagerImplementation::validatePlayerData(CreatureObject* player) {
 		else if (councilType == COUNCIL_DARK && player->getFaction() != Factions::FACTIONIMPERIAL)
 			player->setFaction(Factions::FACTIONIMPERIAL);
 
-		//if (player->getFactionStatus() != FactionStatus::OVERT) //Removed Overt requirement for FRS
-			//player->setFactionStatus(FactionStatus::OVERT);
+		if (player->getFactionStatus() != FactionStatus::OVERT) //Removed Overt requirement for FRS
+			player->setFactionStatus(FactionStatus::OVERT);
 
 		if (realPlayerRank >= 4 && !player->hasSkill("force_title_jedi_rank_04"))
 			player->addSkill("force_title_jedi_rank_04", true);
